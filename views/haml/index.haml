@@ -1,0 +1,19 @@
+<!doctype html>
+%html{:lang => "ja"} 
+    %head 
+        %meta{:charset => "UTF-8"}/ 
+        %title Sinatra+Processing
+        %script{:src => "js/jquery-2.1.0.min.js"} 
+        %script{:src => "js/processing.js"} 
+        %script{:src => "js/d3.js"}
+        %script{:src => "js/graph.js"}
+        /%script{:src => "javascript/graph.js"}
+        %link{:rel => "stylesheet", :href => "stylesheets/style.css"}/
+    %body 
+        %h1 sinatra+processing
+        #graph1
+        %canvas{:datasrc=>"pjs/sketch20141202.pjs",:id=>"processing-code",:type=>"application/processing"}
+        /%canvas{:datasrc=>"pjs/sketch20141114.pjs",:id=>"processing-code",:type=>"application/processing"}
+        /%canvas{:datasrc=>"pjs/sketch20141028.pjs",:id=>"processing-code",:type=>"application/processing"}
+        .img-list#js-img-list
+    
